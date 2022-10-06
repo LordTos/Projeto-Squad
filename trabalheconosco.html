@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!-- BASE PARA AS OUTRAS PÁGINAS, SE TIVER OK EU FAÇO O RESTO DOS ARQUIVOS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Good Burguer | Hamburgueria Delivery</title>
+    <script src="javascript/projeto.js"></script>
+    <link  href ="estilos/style.css " rel ="stylesheet" >
+    <link rel="icon" type="image/x-icon" href="imagems/logo200.png">
+</head>
+<body>
+    <!-- INÍCIO DO CABEÇALHO DA PÁGINA - igual em todos os arquivos hmtl -->
+    <header>
+
+        <!-- logo no topo do site -->
+        <figure id="logoHeader">
+            <a href="index.html"><img src="imagems/logo200.png" alt="Good Burguer"></a>
+        </figure>
+        <!-- título no topo do site -->
+        <a href="index.html"><h1 id="nomeHeader" translate="no">Good Burger</h1></a> <br>
+        <!-- menu de navegação principal -->
+        <nav id="menuHeader">
+            <ul>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="promo.html">Promoções</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="sobre.html">Quem Somos</a>
+                    <ul>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="trabalheconosco.html">Trabalhe Conosco</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIM DO CABEÇALHO DA PÁGINA -->
+
+    <section class="conteudo">
+        <!-- CONTEÚDO DA PÁGINA -->
+
+        <form autocomplete="off">
+            <h2>Trabalhe conosco</h2>
+            <p>Preencha seus dados abaixo para ter a oportunidade de trabalhar com nossa equipe</p><br>
+            <p>
+                <label for="nomeid">Nome: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="nomeid" placeholder="Nome Completo" required />
+            </p> <br>
+            <p>
+                <label for="telefoneid">Telefone:&nbsp;</label>
+                <input type="tel" id="telefoneid" placeholder="Telefone" required>
+            </p> <br>
+            <p>
+                <label for="emailid">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="emailid" placeholder="Email" required>
+            </p> <br>
+            <p>
+                <label for="enderecoid">Endereço:</label>
+                <input type="text" id="enderecoid" placeholder="Endereço" required>
+            </p> <br>
+            <p>
+                <label for="cidadeid">Cidade:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="cidadeid" placeholder="Cidade" required>
+            </p> <br>
+            <p>
+                <label for="estadoid">Estado:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="estadoid" placeholder="Estado" required>
+            </p> <br>
+            <p>
+                <label for="mensagem">Mensagem</label> <br>
+                <textarea id="mensagemid" placeholder="Mensagem"></textarea>
+            </p> <br>
+            <p>
+                <label for="anexarCurriculoId">Anexar Currículo</label>
+                <input type="file" id="anexarCurriculoId" />
+            </p>
+            <input type="submit" class="enviar" onclick="enviar()" value="enviar"/>
+        </form>
+
+    </section>
+
+    <!-- INÍCIO DO RODAPÉ DA PÁGINA -->
+    <footer id="footer">
+        <!-- logo no rodapé do site -->
+        <figure id="logoFooter">
+            <a href="index.html"><img src="imagems/qr-code100.png" alt="Good Burguer"></a>
+        </figure>
+        <!-- texto do rodapé -->
+        <h6>Baixe o nosso APP</h6>
+        <p>Texto que vai te convencer a baixar esse aplicativo fictício para
+            comprar um hamburguer de vento e um refri vazio.
+        </p>
+        <!-- botão para baixar o APP -->
+        <buttom id="botaoAPP">Baixar</buttom>
+        <p class="copy">Todos os direitos reservados &COPY; 2022. Imagens meramente ilustrativas.</p>
+
+    </footer>
+    <!-- FIM DO RODAPÉ DA PÁGINA -->
+</body>
+</html>
